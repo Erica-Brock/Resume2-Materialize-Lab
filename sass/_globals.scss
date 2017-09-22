@@ -1,4 +1,16 @@
 * {
     box-sizing: border-box;
+    border:solid black
 }
 
+.containers, section{
+    width:75%;
+    margin: auto;
+    .img{
+        display:inline-block;
+        width:100%;
+        margin:0;
+        padding:0;
+        height:30em;
+        }
+}
