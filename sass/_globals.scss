@@ -1,16 +1,41 @@
 * {
     box-sizing: border-box;
-    border:solid black
+    /*border:solid black*/
 }
 
 .containers, section{
+    @include reset;
     width:75%;
-    margin: auto;
-    .img{
-        display:inline-block;
-        width:100%;
-        margin:0;
-        padding:0;
-        height:30em;
+}
+.navbar{
+    nav{
+        .brand-logo{
+            position: relative;
+            left: 1em;
         }
+    background-color: black;
+    ul{
+        li{
+            @include reset;
+        }
+    }
+    }
+}
+
+.logo, .brand-logo{
+    @include reset;
+    height: 2em;
+    
+}
+.row, .col, .col .s4{/*
+    @include reset;
+    height:20em;*/
+    img{
+        @include reset;
+        height:20em;
+        width:32em;
+        overflow: hidden;
+    }
+    
+
 }

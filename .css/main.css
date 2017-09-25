@@ -1,15 +1,35 @@
 * {
   box-sizing: border-box;
-  border: solid black; }
+  /*border:solid black*/ }
 
 .containers, section {
-  width: 75%;
-  margin: auto; }
-  .containers .img, section .img {
-    display: inline-block;
-    width: 100%;
-    margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  width: 75%; }
+
+.navbar nav {
+  background-color: black; }
+  .navbar nav .brand-logo {
+    position: relative;
+    left: 1em; }
+  .navbar nav ul li {
+    margin: 0 auto;
+    padding: 0; }
+
+.logo, .brand-logo {
+  margin: 0 auto;
+  padding: 0;
+  height: 2em; }
+
+.row, .col, .col .s4 {
+                 /*
+@include reset;
+height:20em;*/ }
+  .row img, .col img, .col .s4 img {
+    margin: 0 auto;
     padding: 0;
-    height: 25em; }
+    height: 20em;
+    width: 32em;
+    overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */
