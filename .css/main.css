@@ -5,7 +5,7 @@
 .containers, section {
   margin: 0 auto;
   padding: 0;
-  width: 75%; }
+  width: 70%; }
 
 .navbar nav {
   background-color: black; }
@@ -16,20 +16,29 @@
     margin: 0 auto;
     padding: 0; }
 
+.carousel {
+  height: 27em; }
+  .carousel img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%; }
+
 .logo, .brand-logo {
   margin: 0 auto;
   padding: 0;
   height: 2em; }
 
-.row, .col, .col .s4 {
-                 /*
-@include reset;
-height:20em;*/ }
-  .row img, .col img, .col .s4 img {
+.row, .col, div.col.s4 {
+  margin: 0 auto;
+  padding: 0;
+  height: 20em; }
+  .row img, .col img, div.col.s4 img {
     margin: 0 auto;
     padding: 0;
-    height: 20em;
-    width: 32em;
-    overflow: hidden; }
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%; }
 
 /*# sourceMappingURL=main.css.map */

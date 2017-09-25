@@ -5,7 +5,7 @@
 
 .containers, section{
     @include reset;
-    width:75%;
+    width:70%;
 }
 .navbar{
     nav{
@@ -21,20 +21,25 @@
     }
     }
 }
+.carousel{
+    height: 27em;
+    img{
+        @include fit;
+    }
 
+}
 .logo, .brand-logo{
     @include reset;
     height: 2em;
     
 }
-.row, .col, .col .s4{/*
+.row, .col, div.col.s4{
     @include reset;
-    height:20em;*/
+    height:20em;
+ 
     img{
         @include reset;
-        height:20em;
-        width:32em;
-        overflow: hidden;
+        @include fit;
     }
     
 
