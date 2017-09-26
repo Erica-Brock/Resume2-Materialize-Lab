@@ -1,5 +1,8 @@
 $(document).ready(function(){
-    $('.carousel').carousel();
-  });
+    $('.carousel.caurosel-slider').carousel();
+    $('.parallax').parallax();
    $('.carousel.carousel-slider').carousel({fullWidth: true});
-   $('.parallax').parallax()
+      $('.carousel.carousel-slider').on('click', function(){$('.carousel').carousel('next');
+      $('.button-collapse').sideNav();
+    });
+  });

@@ -1,47 +1,81 @@
 * {
-  box-sizing: border-box;
-  /*border:solid black*/ }
+  box-sizing: border-box; }
 
 body {
   background-color: #efedde; }
 
-.containers, section {
+.background-color {
+  background-color: #e2dce5; }
+
+.containers, section, li, .carousel, img, .logo, .brand-logo,
+.row, .col, div.col.s12, div.col.m6, div.col.l4, .card, p, h3, .name-card, .wizard-contact-form, .card-panel {
   margin: 0 auto;
-  padding: 0;
+  padding: 0; }
+
+.carousel img, .picture-block img, .video-container {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%; }
+
+.containers, section, .name-card {
   width: 70%; }
 
-.navbar nav {
+nav {
   background-color: black; }
-  .navbar nav .brand-logo {
+  nav .brand-logo {
     position: relative;
     left: 1em; }
-  .navbar nav ul li {
-    margin: 0 auto;
-    padding: 0; }
 
 .carousel {
   height: 27em; }
-  .carousel img {
-    max-width: 100%;
-    max-height: 100%;
-    min-width: 100%;
-    min-height: 100%; }
 
 .logo, .brand-logo {
-  margin: 0 auto;
-  padding: 0;
   height: 2em; }
 
+.card-panel {
+  background-color: #efedde;
+  position: relative;
+  top: 4em;
+  width: 90%;
+  margin: 0 auto; }
+
 .row, .col, div.col.s4 {
-  margin: 0 auto;
-  padding: 0;
   height: 20em; }
-  .row img, .col img, div.col.s4 img {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 100%;
-    max-height: 100%;
-    min-width: 100%;
-    min-height: 100%; }
+
+h3 {
+  font-size: 1.5em;
+  border-bottom: solid black thick; }
+
+.line-height {
+  line-height: 2em; }
+
+.wizard-contact-form {
+  width: 85%; }
+
+.wizard-contact-form .m-override input, textarea {
+  width: 100%;
+  background-color: #e2dce5;
+  border: solid black thin; }
+
+textarea {
+  height: 15em; }
+
+button {
+  width: 7em;
+  height: 4em;
+  color: white;
+  background-color: purple;
+  margin: 0 auto;
+  display: block; }
+
+footer p, footer img {
+  display: inline-block;
+  margin-top: 2em; }
+
+footer {
+  margin-top: 2em;
+  text-align: center;
+  border-top: solid thin black; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,48 +1,82 @@
 * {
     box-sizing: border-box;
-    /*border:solid black*/
 }
 body{
-    background-color: #efedde;
+    background-color:$primary-color2;
 }
-.containers, section{
+.background-color{
+    background-color:$primary-color1;
+}
+.containers, section, li, .carousel, img, .logo, .brand-logo,
+.row,.col, div.col.s12, div.col.m6, div.col.l4, .card, p, h3,.name-card, .wizard-contact-form,.card-panel{
     @include reset;
+}
+.carousel img,.picture-block img, .video-container{
+    @include fit;
+}
+.containers, section,.name-card{
     width:70%;
 }
-.navbar{
-    nav{
+nav{
+    background-color: black;
         .brand-logo{
             position: relative;
             left: 1em;
         }
-    background-color: black;
-    ul{
-        li{
-            @include reset;
-        }
     }
-    }
-}
-.carousel{
+   
+ .carousel{
     height: 27em;
-    img{
-        @include fit;
-    }
-
 }
+ 
 .logo, .brand-logo{
-    @include reset;
-    height: 2em;
-    
+    height: 2em;   
+}
+.card-panel{
+    background-color: $primary-color2;
+    position: relative;
+    top: 4em;
+    width:90%;
+    margin:0 auto;
 }
 .row, .col, div.col.s4{
-    @include reset;
     height:20em;
- 
-    img{
-        @include reset;
-        @include fit;
-    }
-    
-
 }
+h3{
+    font-size: 1.5em;
+    border-bottom: solid black thick;
+}
+.line-height{
+    line-height: 2em;
+}
+.wizard-contact-form{
+    width:85%
+}
+.wizard-contact-form .m-override input, textarea{
+    width:100%;
+    background-color:$primary-color1;
+    border: solid black thin;
+}
+textarea{
+    height: 15em;
+}
+button{
+    width: 7em;
+    height: 4em;
+    color: white;
+    background-color: purple;
+    margin: 0 auto;
+    display:block;
+  
+}
+footer p, footer img{
+    display: inline-block;
+    margin-top: 2em;
+    
+}
+footer{
+    margin-top:2em;
+    text-align: center;
+    border-top: solid thin black;
+}
+
