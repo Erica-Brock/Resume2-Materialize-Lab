@@ -37,8 +37,8 @@ nav {
   background-color: #efedde;
   position: relative;
   top: 4em;
-  width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 90%; }
 
 .row, .col, div.col.s4 {
   height: 20em; }
